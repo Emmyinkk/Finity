@@ -43,6 +43,10 @@ section {
   padding: 2em 2em;
 }
 
+section.hero .left-column {
+  display: none;
+}
+
 section.hero .center {
   text-align: center;
 }
@@ -206,6 +210,10 @@ section.hero .center .credit-card {
   vertical-align: middle;
 }
 
+.features-section .email .container2 .image-flex .right-column {
+  display: none;
+}
+
 .features-section .email .container2 .compact .head-up {
   text-align: center;
 }
@@ -256,6 +264,10 @@ section.hero .center .credit-card {
 
 .features-section .work-anywhere {
   text-align: center;
+}
+
+.features-section .work-anywhere .container .image-flex2 .left-inbox {
+  display: none;
 }
 
 .features-section .work-anywhere .container .compact2 .head-up .design-dup {
@@ -377,17 +389,7 @@ section.hero .center .credit-card {
 }
 
 .plan .container .top-col .plan-frame {
-  background: #FFD166;
-  padding: .5em 0em .55em 2em;
-  border-radius: .5em;
-}
-
-.plan .container .top-col span {
-  background: white;
-  border: 2px solid #FFD166;
-  padding: .4em 1em;
-  margin-left: 1em;
-  border-radius: 0em .5em .5em 0em;
+  margin-top: 4em;
 }
 
 .plan .container .columns {
@@ -517,6 +519,10 @@ div.scroll-menu {
 
 .footer {
   background: #1D293F;
+}
+
+.footer img {
+  display: none;
 }
 
 .footer .container .flex-box .footer-col1 {
@@ -679,60 +685,70 @@ nav.menu-btn {
             animation-duration: 0ms;
   }
   .hero {
-    background: url("../Images/herobg.jpg") no-repeat;
-    width: 90%;
-    height: 700px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .container .heading {
+    margin: 0 auto;
+    padding-bottom: 0em;
+    width: 70%;
+  }
+  .hero .container .subhead {
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 2em;
+  }
+  .hero .container .hero_image_flex .left-column {
+    display: inline-block;
+    margin-left: 3em;
+    margin-top: 3em;
+    width: 10%;
+    z-index: 2;
+  }
+  .hero .container .hero_image_flex .left-column .hero-image img {
+    position: absolute;
+    width: 70%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    height: 210px;
+  }
+  .hero .container .hero_image_flex .left-column .phone {
+    display: none;
+  }
+  .hero .container .hero_image_flex .left-column .phone1 {
+    display: none;
   }
   .features-section {
     background: white;
     color: black;
+    margin-top: 10.8em;
   }
   .features-section .container .social-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-align: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     opacity: 0.6;
     filter: alpha(opacity=60);
     width: 90%;
     margin: 0 auto;
     size: -.5em;
   }
-  .features-section .container .social-link .link1 {
-    width: 8.9375em;
-    height: 1.9375em;
-    left: 23.4375em;
-    top: 63.875em;
-  }
-  .features-section .container .social-link .link2 {
-    width: 6.5em;
-    height: 1.6875em;
-    left: 37em;
-    top: 64.0625em;
-  }
-  .features-section .container .social-link .link3 {
-    width: 8.5em;
-    height: 1.625em;
-    left: 47.125em;
-    top: 64.0625em;
-  }
-  .features-section .container .social-link .link4 {
-    width: 5.25em;
-    height: 1.1875em;
-    left: 964px;
-    top: 60em;
-  }
-  .features-section .container .social-link .link5 {
-    width: 6.4375em;
-    height: 1.6875em;
-    left: 70.125em;
-    top: 64.0625em;
+  .features-section .container .social-link img {
+    width: 70px;
+    padding: 1em;
   }
   .features-section .container .solutions img {
     display: block;
@@ -790,6 +806,9 @@ nav.menu-btn {
     display: -ms-flexbox;
     display: flex;
   }
+  .features-section .container .email .container2 .right-column {
+    display: none;
+  }
   .features-section .container .email .container2 .compact .head-up {
     text-align: center;
   }
@@ -830,16 +849,7 @@ nav.menu-btn {
     color: #1D293F;
   }
   .plan .container .top-col .plan-frame {
-    background: #FFD166;
-    padding: .55em 0em .5em 2.5em;
-    border-radius: .5em;
-  }
-  .plan .container .top-col span {
-    background: white;
-    border: 2px solid #FFD166;
-    padding: .4em 1.5em;
-    margin-left: 1em;
-    border-radius: 0em .5em .5em 0em;
+    margin-top: 7em;
   }
   .plan .container .columns {
     display: -webkit-box;
@@ -951,15 +961,60 @@ nav.menu-btn {
     width: 100%;
   }
   .hero {
-    background: url("../Images/herobg.jpg") no-repeat;
-    width: 95%;
-    height: 700px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .hero .container {
-    width: 35%;
+  .hero .container .heading {
+    margin: 0 auto;
+    padding-bottom: 0em;
+    width: 70%;
+  }
+  .hero .container .subhead {
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 2em;
+  }
+  .hero .container .hero_image_flex .left-column {
+    display: inline-block;
+    margin-left: 3em;
+    margin-top: 3em;
+    z-index: 1;
+  }
+  .hero .container .hero_image_flex .left-column .hero-image img {
+    position: absolute;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    height: 210px;
+  }
+  .hero .container .hero_image_flex .left-column .phone {
+    position: absolute;
+    display: block;
+    margin-left: 51%;
+    margin-top: -3em;
+    width: 120px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 110px;
+  }
+  .hero .container .hero_image_flex .left-column .phone1 {
+    position: absolute;
+    display: block;
+    margin-top: 7.1em;
+    margin-left: 1%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 120px;
+    height: 105px;
   }
   .features-section {
     background: white;
@@ -973,9 +1028,9 @@ nav.menu-btn {
     display: -ms-flexbox;
     display: flex;
     text-align: justify;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 70%;
     margin: 0 auto;
   }
@@ -1069,12 +1124,40 @@ nav.menu-btn {
     line-height: 2em;
     letter-spacing: 0;
   }
-  .features-section .container .email .container2 .image-flex .large-picture {
-    float: right;
-    display: inline;
-    vertical-align: middle;
-    width: 150%;
+  .features-section .container .email .container2 .image-flex .right-column {
+    display: inline-block;
+    margin-left: 3em;
+    margin-top: 3em;
+    z-index: 2;
+  }
+  .features-section .container .email .container2 .image-flex .right-column .orange {
+    position: absolute;
+    width: 30%;
     margin-top: 12em;
+    margin-left: -35%;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .features-section .container .email .container2 .image-flex .right-column .picture {
+    position: absolute;
+    display: block;
+    margin-left: -27%;
+    margin-top: 14em;
+    width: 30%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 400px;
+  }
+  .features-section .container .email .container2 .image-flex .right-column .picture2 {
+    position: absolute;
+    display: block;
+    margin-top: 17em;
+    margin-left: -32%;
+    width: 20%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 250px;
   }
   .features-section .container .work-anywhere {
     margin-left: 10%;
@@ -1088,13 +1171,42 @@ nav.menu-btn {
             justify-content: space-between;
     text-align: right;
   }
-  .features-section .container .work-anywhere .container .image-flex2 .inbox {
-    float: left;
-    display: inline;
-    vertical-align: middle;
-    width: 120%;
-    margin-top: 12em;
-    margin-right: 8em;
+  .features-section .container .work-anywhere .container .image-flex2 .left-inbox {
+    display: inline-block;
+    margin-left: 3em;
+    margin-top: 3em;
+    margin-right: 15em;
+    z-index: 2;
+  }
+  .features-section .container .work-anywhere .container .image-flex2 .left-inbox .blue-circle {
+    position: absolute;
+    width: 100%;
+    max-width: 30%;
+    margin-top: 19em;
+    margin-left: 0%;
+    height: 350px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .features-section .container .work-anywhere .container .image-flex2 .left-inbox .inbox-picture {
+    position: absolute;
+    display: block;
+    margin-left: -1%;
+    margin-top: 13em;
+    width: 30%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 500px;
+  }
+  .features-section .container .work-anywhere .container .image-flex2 .left-inbox .inbox-picture2 {
+    position: absolute;
+    display: block;
+    margin-top: 30em;
+    margin-left: 12%;
+    width: 20%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 100px;
   }
   .features-section .container .work-anywhere .container .compact2 {
     margin-top: 10em;
@@ -1111,7 +1223,7 @@ nav.menu-btn {
     font-weight: 700;
     line-height: 1.0em;
     letter-spacing: -0.05em;
-    width: 58%;
+    width: 70%;
     color: #1D293F;
   }
   .features-section .container .work-anywhere .container .compact2 .head-up .companies-version-dup {
@@ -1148,9 +1260,9 @@ nav.menu-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1210,9 +1322,11 @@ nav.menu-btn {
   }
   .plan {
     background: white;
+    margin-bottom: 5em;
   }
   .plan .container {
     width: 80%;
+    margin-bottom: 10em;
   }
   .plan .container .top-col {
     display: -webkit-box;
@@ -1235,10 +1349,6 @@ nav.menu-btn {
   }
   .plan .container .top-col .plan-frame {
     margin-top: 7em;
-    margin-bottom: 7em;
-    background: #FFD166;
-    padding: .5em 0em 0em 2.5em;
-    border-radius: .5em;
   }
   .plan .container .top-col span {
     background: white;
@@ -1256,6 +1366,7 @@ nav.menu-btn {
             justify-content: space-between;
     margin-bottom: 20em;
     line-height: 2em;
+    margin: 0 auto;
   }
   .plan .container .columns .scroll-flex {
     display: -webkit-box;
@@ -1351,7 +1462,7 @@ nav.menu-btn {
     color: #1D293F;
     font-size: 17px;
     position: absolute;
-    margin-left: -32.3em;
+    margin-left: -33em;
     margin-top: 16em;
   }
   .plan .container .columns .scroll-flex .price .price3 {
@@ -1371,7 +1482,7 @@ nav.menu-btn {
     text-align: center;
     position: absolute;
     width: 15%;
-    padding: .2em;
+    padding: .4em;
     margin-left: -1.5em;
     margin-top: 18em;
     color: white;
@@ -1383,6 +1494,19 @@ nav.menu-btn {
   .plan .container .columns span {
     font-size: 30px;
     margin-top: 0;
+  }
+  .footer img {
+    display: block;
+  }
+  .footer .footer-images .half-rectangle {
+    position: absolute;
+    right: 0em;
+    margin-top: -19em;
+  }
+  .footer .footer-images .Semi-circle {
+    position: absolute;
+    left: 0em;
+    margin-top: -5.9em;
   }
   .footer .container {
     width: 100%;
@@ -1441,8 +1565,91 @@ nav.menu-btn {
 }
 
 @media only screen and (min-width: 1350px) {
+  .hero .container .heading {
+    margin: 0 auto;
+    padding-bottom: 0em;
+    width: 70%;
+  }
+  .hero .container .subhead {
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 2em;
+  }
+  .hero .container .hero_image_flex .left-column {
+    display: inline-block;
+    margin-left: 3em;
+    margin-top: 3em;
+    z-index: 2;
+  }
+  .hero .container .hero_image_flex .left-column .hero-image img {
+    position: absolute;
+    width: 100%;
+    margin-top: 0;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    height: 210px;
+  }
+  .hero .container .hero_image_flex .left-column .phone {
+    position: absolute;
+    display: block;
+    margin-left: 41%;
+    margin-top: -2.5em;
+    width: 120px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 110px;
+  }
+  .hero .container .hero_image_flex .left-column .phone1 {
+    position: absolute;
+    display: block;
+    margin-top: 7.1em;
+    margin-left: 1%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 120px;
+    height: 105px;
+  }
+  .email .container2 .image-flex .right-column {
+    display: inline-block;
+    margin-left: 3em;
+    margin-top: 3em;
+    margin-right: .5em;
+    z-index: 2;
+  }
+  .email .container2 .image-flex .right-column .orange {
+    position: absolute;
+    width: 30%;
+    margin-top: 12em;
+    margin-left: -35%;
+    height: auto;
+  }
+  .email .container2 .image-flex .right-column .picture {
+    position: absolute;
+    display: block;
+    margin-left: -27%;
+    margin-top: 14em;
+    width: 30%;
+    height: auto;
+  }
+  .email .container2 .image-flex .right-column .picture2 {
+    position: absolute;
+    display: block;
+    margin-top: 17em;
+    margin-left: -32%;
+    width: 20%;
+    height: auto;
+  }
+  .work-anywhere .container .image-flex2 .left-inbox {
+    display: inline-block;
+    padding-right: 10em;
+  }
   .plan {
     background: white;
+    margin-bottom: -15em;
   }
   .plan .container {
     width: 80%;
@@ -1468,10 +1675,6 @@ nav.menu-btn {
   }
   .plan .container .top-col .plan-frame {
     margin-top: 7em;
-    margin-bottom: 4.5em;
-    background: #FFD166;
-    padding: .5em 0em 0em 2.5em;
-    border-radius: .5em;
   }
   .plan .container .top-col span {
     background: white;
